@@ -7,11 +7,13 @@
  *
  *
  */
+if(stristr($_SERVER['HTTP_HOST'], '.lc')){
+	define('VIDEO_HOST', 'ws://10.10.6.124');
+} else {
+	define('VIDEO_HOST', 'ws://10.50.5.6');
+}
 
-header('Cache-Control: no-store, no-store, must-revalidate');
-header('Pragma: no-cache');
-header('Expires: 0')
-
+define('VIDEO_HOST_PORT', '8082');
 ?>
 
 <!DOCTYPE html>
@@ -24,6 +26,12 @@ header('Expires: 0')
     <script src="/assets/js/player.js"></script>
     <script src="/assets/js/script.js?1"></script>
     <link rel="stylesheet" href="/assets/css/stylesheet.css">
+    <script>
+        window.arSettings = {
+            video_host: '<?=VIDEO_HOST?>',
+            video_port: '<?=VIDEO_PORT?>'
+        }
+    </script>
 </head>
 <body>
     <div class="logo"></div>
