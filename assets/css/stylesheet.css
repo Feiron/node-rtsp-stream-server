@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
+body,
+html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #000;
+  height: 100%;
+  min-height: 100%;
+  font-size: 1em;
+}
+body {
+  position: relative;
+}
+canvas#player {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.time {
+  font-family: 'Orbitron', sans-serif;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  font-size: 6rem;
+  font-weight: bold;
+  color: #FFF;
+  display: flex;
+  align-content: center;
+  z-index: 99999;
+  justify-content: left;
+  margin: 8px 0 0 50px;
+}
+@media (max-width: 1054px) {
+  .time {
+    justify-content: center;
+    margin: 0;
+    font-size: 9rem;
+  }
+}
+@media (max-height: 760px) {
+  .time {
+    justify-content: center;
+    margin: 0;
+    font-size: 4rem;
+  }
+}
+.time .dots {
+  animation: blink 1.4s infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.01;
+  }
+}
+.time span {
+  display: block;
+}
+.logo {
+  background: url('/assets/images/logo.svg') no-repeat 2% 2%;
+  position: fixed;
+  bottom: 0;
+  height: 200px;
+  width: 100%;
+  z-index: 9999;
+  margin: 20px 0;
+}
+@media (max-width: 1054px) {
+  .logo {
+    background-position: center center;
+    height: 160px;
+    margin: 40px 0;
+  }
+}
+@media (max-height: 760px) {
+  .logo {
+    height: 100px;
+    margin: 20px 0;
+  }
+}
+/*# sourceMappingURL=stylesheet.css.map */
