@@ -29,7 +29,7 @@ define('VIDEO_HOST_PORT', '8082');
     <script>
         window.arSettings = {
             video_host: '<?=VIDEO_HOST?>',
-            video_port: '<?=VIDEO_PORT?>'
+            video_port: '<?=VIDEO_HOST_PORT?>'
         }
     </script>
 </head>
