@@ -27,7 +27,7 @@ define('VIDEO_HOST_PORT', '8082');
     <script src="/assets/js/jsmpeg.min.js"></script>
     <script src="/assets/js/player.js"></script>
     <script src="/assets/js/script.js?1"></script>
-    <link rel="stylesheet" href="/assets/css/stylesheet.css">
+    <link rel="stylesheet" href="/assets/css/stylesheet.css?2">
     <script>
         window.arSettings = {
             video_host: '<?=VIDEO_HOST?>',

@@ -31,17 +31,17 @@ canvas#player {
   justify-content: left;
   margin: 8px 0 0 50px;
 }
-@media (max-width: 1054px) {
+@media (max-width: 1054px) and (min-height: 760px) {
   .time {
     justify-content: center;
-    margin: 0;
+    margin: 40px 0 0;
     font-size: 9rem;
   }
 }
 @media (max-height: 760px) {
   .time {
     justify-content: center;
-    margin: 0;
+    margin: 40px 0 0;
     font-size: 4rem;
   }
 }
