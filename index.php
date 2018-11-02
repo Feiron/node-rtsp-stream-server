@@ -1,7 +1,6 @@
 <?php
 /**
  * User: Feiron
- * Project: GlobalPost LTD
  * Date: 04.06.2018
  * Time: 15:37
  *
@@ -10,7 +9,8 @@
 if(stristr($_SERVER['HTTP_HOST'], '.lc')){
 	define('VIDEO_HOST', 'ws://10.10.6.124');
 } else {
-	define('VIDEO_HOST', 'ws://' .$_SERVER['HTTP_HOST']);
+    $strHost = substr($_SERVER['HTTP_HOST'], 0, stripos($_SERVER['HTTP_HOST'], ':'));
+	define('VIDEO_HOST', 'ws://' . $strHost);
 }
 
 define('VIDEO_HOST_PORT', '8082');
