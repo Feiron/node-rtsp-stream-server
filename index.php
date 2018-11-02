@@ -10,7 +10,7 @@
 if(stristr($_SERVER['HTTP_HOST'], '.lc')){
 	define('VIDEO_HOST', 'ws://10.10.6.124');
 } else {
-	define('VIDEO_HOST', 'ws://10.50.5.6');
+	define('VIDEO_HOST', 'ws://' .$_SERVER['HTTP_HOST']);
 }
 
 define('VIDEO_HOST_PORT', '8082');
@@ -20,7 +20,9 @@ define('VIDEO_HOST_PORT', '8082');
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Газкомплект</title>
+    <title>CDS-Online | Saint-Peterburg</title>
+    <meta name="keywords" content="Трансляция, CDS, ЦДС, Виды Санкт-Петербурга"/>
+    <meta name="description" content="Сайт онлайн трансляции объекта CDS-Online"/>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="/assets/js/jsmpeg.min.js"></script>
     <script src="/assets/js/player.js"></script>
