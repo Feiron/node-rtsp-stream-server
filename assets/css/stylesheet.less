@@ -71,21 +71,30 @@ canvas {
 .logo {
   background: url('/assets/images/logo.svg') no-repeat 2% 2%;
 
-  @media (max-width: 1054px) {
-    background-position: center center;
-    height: 160px;
-    margin: 40px 0;
-  }
-  @media (max-height: 760px) {
-    height: 100px;
-    margin: 20px 0;
-  }
-
   position: fixed;
   bottom: 0;
   height: 200px;
   width: 100%;
   z-index: 9999;
   margin: 20px 0;
+
+  .logo-zds {
+    background: url('/assets/images/zds.svg') no-repeat center 80%;
+    background-size: 20%;
+    height: 100%;
+  }
+
+  @media (max-width: 1054px) {
+    background-position: 60% center;
+    height: 120px;
+    margin: 40px 0;
+    .logo-zds {
+      background-position: 40% 76%;
+    }
+  }
+  @media (max-height: 760px) {
+    height: 80px;
+    margin: 20px 0;
+  }
 
 }

@@ -36,7 +36,9 @@ define('VIDEO_HOST_PORT', '8082');
     </script>
 </head>
 <body>
-    <div class="logo"></div>
+    <div class="logo">
+        <div class="logo-zds"></div>
+    </div>
     <div class="time">
         <span class="hours"><?= date('H') ?></span>
         <span class="dots" data-text=":">:</span>

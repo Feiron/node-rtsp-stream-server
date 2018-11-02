@@ -71,16 +71,24 @@ canvas#player {
   z-index: 9999;
   margin: 20px 0;
 }
+.logo .logo-zds {
+  background: url('/assets/images/zds.svg') no-repeat center 80%;
+  background-size: 20%;
+  height: 100%;
+}
 @media (max-width: 1054px) {
   .logo {
-    background-position: center center;
-    height: 160px;
+    background-position: 60% center;
+    height: 120px;
     margin: 40px 0;
+  }
+  .logo .logo-zds {
+    background-position: 40% 76%;
   }
 }
 @media (max-height: 760px) {
   .logo {
-    height: 100px;
+    height: 80px;
     margin: 20px 0;
   }
 }
