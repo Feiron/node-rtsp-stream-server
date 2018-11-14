@@ -15,7 +15,7 @@ class PlayerEngine {
             Player: {
                 canvas: this.$viewport[0],
                 audio: false,
-                videoBufferSize: 512*1024*2,
+                videoBufferSize: (512 * 1024) * 2,
                 onVideoDecode: $.proxy(function () {
                     this.setViewport()
                 }, this)
