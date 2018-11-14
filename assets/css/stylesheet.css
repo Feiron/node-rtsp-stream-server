@@ -24,6 +24,7 @@ canvas#player {
   width: 100%;
   font-size: 6rem;
   font-weight: bold;
+  text-shadow: 6px 6px #000000;
   color: #FFF;
   display: flex;
   align-content: center;
